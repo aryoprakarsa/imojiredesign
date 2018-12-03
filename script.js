@@ -19,46 +19,6 @@ var itemsDetails = [
 		title : 'Card Title Bootstrap Uses Angular JS Implementation 4',
 		itemView : 8,
 		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 5',
-		itemView : 8,
-		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 6',
-		itemView : 8,
-		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 7',
-		itemView : 8,
-		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 8',
-		itemView : 8,
-		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 9',
-		itemView : 8,
-		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 10',
-		itemView : 8,
-		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 11',
-		itemView : 8,
-		itemLove : 3
-	},
-	{ 
-		title : 'Card Title Bootstrap Uses Angular JS Implementation 12',
-		itemView : 8,
-		itemLove : 3
 	}
 ];
 var app = angular.module("myApp", ['ngRoute', 'ui.bootstrap', 'oc.lazyLoad']);

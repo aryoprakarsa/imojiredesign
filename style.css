@@ -131,14 +131,15 @@ ul.pagination li.active a{
 }
 .lds-dual-ring {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
+  margin-top: 20%;
 }
 .lds-dual-ring:after {
   content: " ";
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 74px;
+  height: 74px;
   margin: 1px;
   border-radius: 50%;
   border: 5px solid #f24086;
