@@ -47,6 +47,7 @@ a, a.page-link{
 .btn-outline-secondary.side_round:focus,  {
 	background-color: #f24086;
 	color:#fff;
+	border-color: #fff;
 	box-shadow:none;
 }
 .navbar a:hover, .navbar a:focus, .navbar a:active{
