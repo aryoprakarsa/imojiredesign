@@ -45,8 +45,8 @@ a, a.page-link{
 	box-shadow:none;
 }
 .side_round:focus {
-	background-color: #fff;
-	color:#000;
+	background-color: #f24086;
+	color:#fff;
 	box-shadow:none;
 }
 .navbar a:hover, .navbar a:focus, .navbar a:active{
