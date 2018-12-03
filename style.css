@@ -44,7 +44,7 @@ a, a.page-link{
 	border-color:#f24086;
 	box-shadow:none;
 }
-.btn-outline-secondary.side_round:focus,  {
+.btn-outline-secondary, .side_round:focus,  {
 	background-color: #f24086;
 	color:#fff;
 	border-color: #fff;
