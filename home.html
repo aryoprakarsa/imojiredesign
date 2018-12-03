@@ -1,0 +1,32 @@
+<div class="card-deck mb-3 event-list" ng-repeat="item in aItems">
+	<div class="card">
+		<img class="card-img-top" src="http://img.imooji.com/xmi/ua/ftbr/i/36f8a674670a63598d73b51c3d7ec8b3-sz_237931.png" alt="Card image cap">
+		<div class="card-body">
+			<h5 class="card-title text-center"><a href="#" class="title">{{item.title}}</a></h5>
+		</div>
+		<div class="card-footer align-items-center">
+			<div class="category text-center">Event &amp; Communities</div>
+			<hr />
+			<div class="stats">
+				<small class="text-muted"><i class="fas fa-heart"></i> {{item.itemLove}}</small>
+				<small class="float-right"><i class="fas fa-eye"></i> {{item.itemView}}</small>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<img class="card-img-top" src="http://img.imooji.com/xmi/ua/ftbr/i/36f8a674670a63598d73b51c3d7ec8b3-sz_237931.png" alt="Card image cap">
+		<div class="card-body">
+			<h5 class="card-title text-center"><a href="#" class="title">{{item.title}}</a></h5>
+		</div>
+		<div class="card-footer align-items-center">
+			<div class="category text-center">Foodies Heaven</div>
+			<hr />
+			<div class="stats">
+				<small class="text-muted"><i class="fas fa-heart"></i> {{item.itemLove}}</small>
+				<small class="float-right"><i class="fas fa-eye"></i> {{item.itemView}}</small>
+			</div>
+		</div>
+	</div>
+</div>
+<uib-pagination total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage"></uib-pagination>
+<div class="loader" ng-hide="afterLoad"><div class="lds-dual-ring"></div></div>

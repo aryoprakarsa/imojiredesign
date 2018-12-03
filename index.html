@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Imoji</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/imooji_logo.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,300i|Quicksand:300,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body ng-controller="mainController">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+		<div class="container h-100 mx-auto flex-column d-none d-md-flex">
+			<header class="masthead mb-auto w-100 px-3">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<a class="navbar-brand" href="#/"><img src="assets/imooji_logo.png" width="85" /></a>
+						<h2 class="d-inline-block">Explore</h2>
+					</div>
+					<div class="col-md-6 text-right">
+						<button type="button" class="btn btn-outline-secondary mr-3 side_round">Sign In</button>
+						<button type="button" class="btn btn-outline-secondary side_round">Create New+</button>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="cover-container w-100 h-100 mx-auto flex-column d-fles d-md-none">
+			<header class="container text-center">
+				<a href="#" onClick="openCat()"><i class="fas fa-bars"></i></a>
+				<a class="mx-5 d-inline-block" href="#"><img src="assets/imooji_logo.png" width="85" /></a>
+				<a href="#" onClick="openUser()"><i class="fas fa-user"></i></a>
+				<div id="userMenu" class="usermenu">
+					<button type="button" class="btn btn-outline-secondary mr-3 side_round">Sign In</button>
+					<button type="button" class="btn btn-outline-secondary side_round">Create New+</button>
+				</div>
+			</header>
+		</div>
+	</nav>
+	<div class="container main-content">
+		<div class="row">
+			<div class="col-md-3 text-right">
+				<nav id="mysidebar" class="sidebar px-3">
+					<form class="mb-3">
+					<input type="text" class="form-control side_round" placeholder="search..." />
+					</form>
+					<h3>Categories</h3>
+					<a class="nav-link d-block" href="#eventcom">Event &amp; Communities</a>
+					<a class="nav-link d-block" href="#foodies-heaven">Foodies Heaven</a>
+				</nav>
+			</div>
+			<div class="col-md-9 main-component">
+				<div ng-view></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="https://code.angularjs.org/1.5.11/angular.min.js"></script>
+     <script src="https://code.angularjs.org/1.5.11/angular-route.min.js"></script>
+	<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>
+	<script src="oc_lazy/ocLazyLoad.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

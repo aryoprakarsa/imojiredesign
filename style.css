@@ -1,0 +1,214 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	font-family:'Quicksand', Muli;
+	font-weight:300;
+}
+a, a.page-link{
+	color:#f24086;
+}
+/* .cover-container { */
+    /* max-width: 56em; */
+/* } */
+.masthead h2{
+	font-weight:300;
+	font-family:Quicksand;
+	color:#f24086;
+	margin-left:3em;
+}
+.sidebar h3{
+	font-weight:300;
+	font-family:Quicksand;
+	color:#f24086;
+}
+.sidebar{
+	max-height:calc(100vh - 125px);
+	overflow:auto;
+	position:fixed;
+	width:19.5%;
+    -webkit-transition: all 0.8s ease-in-out; /* Safari */
+    transition: all 0.8s ease-in-out;
+}
+.main-content{
+	margin-top:120px;
+}
+.card-footer{
+	border:0;
+	background:none;
+}
+.side_round{
+	border-radius:20px;
+}
+.side_round:hover, .btn-outline-secondary:not(:disabled):not(.disabled).side_round:active{
+	background:none;
+	color:#f24086;
+	border-color:#f24086;
+	box-shadow:none;
+}
+.side_round:focus {
+	background-color: #fff;
+	color:#000;
+	box-shadow:none;
+}
+.navbar a:hover, .navbar a:focus, .navbar a:active{
+	color:#f24086;
+}
+.sidebar a{
+	color:#222;
+}
+.navbar-brand{
+	margin-left:4em;
+}
+/* .card-deck{ */
+	/* max-height:calc(100vh - 140px); */
+/* } */
+.card-body{
+	padding-top:0.75rem;
+	padding-bottom:0.6rem;
+	flex:0.7 1 auto;
+}
+a.title:link {
+	color:#f24086;
+	text-decoration: none;
+}
+a.title:visited {
+	color:#f24086;
+	text-decoration: none;
+}
+a.title:hover {
+	color:#f24086;
+	text-decoration: underline;
+}
+.card-footer{
+	padding-top:0.6rem;
+}
+.card-img-top{
+	max-height:335px;
+	/* max-width:360px; */
+	width:100%;
+	height:auto;
+	align-self:center;
+	object-fit:cover;
+}
+.ngx-pagination .current{
+	background: #f24086 !important;
+}
+ul.pagination{
+	text-align:center;
+	display:block;
+}
+ul.pagination li{
+	display:inline-block;
+}
+ul.pagination li a{
+	width:25px;
+	display:block;
+	line-height:25px;
+}
+ul.pagination li.pagination-prev a, ul.pagination li.pagination-next a{
+	width:auto;
+	padding:0 5px;
+}
+ul.pagination li a:hover{
+	color:#f24086;
+}
+ul.pagination li.active a{
+	background:#f24086;
+	color:#fff;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.loader{
+	position:absolute;
+	color:rgba(255, 45, 125, 0.8);
+	font-size:3rem;
+	text-align:center;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+	background:#fff;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #f24086;
+  border-color: #f24086 transparent #f24086 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 48em){
+	.masthead-brand {
+		float: left;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-component{
+		margin-top:1rem;
+	}
+	.sidebar{
+		height:0;
+		width:100%;
+		position:absolute;
+		left:0;
+		right:0;
+		top: 1rem;
+		z-index:99;
+		background:#fff;
+	}
+	.sidebar.open{
+		height:calc(100vh - 125px);
+	}
+	.navbar .container a{
+		font-size:2.5rem;
+	}
+	.usermenu{
+		display:none;
+		position:absolute;
+		top:125px;
+		background:#fff;
+		-webkit-transition: display 0.8s ease-in-out; /* Safari */
+		transition: display 0.8s ease-in-out;
+		left:0;
+		right:0;
+	}
+	.usermenu.open{
+		display:block;
+		padding:15px;
+		text-align:center;
+	}
+}
